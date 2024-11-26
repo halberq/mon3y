@@ -6,5 +6,5 @@ function displayResponse(event) {
   const responseMessage = document.getElementById('response-message');
 
   // Update the message text
-  responseMessage.textContent = "kys I ain't giving you shit 😂";
+  responseMessage.textContent = "Thank you for your information, we will contact you soon enough";
 }
