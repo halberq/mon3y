@@ -11,15 +11,17 @@
     <h1>🎉 Congratulations! 🎉</h1>
     <p>You could be the lucky winner of <strong>₱100</strong> in cash!</p>
     <p>To claim your prize, please provide the following:</p>
-    <form>
+    <form onsubmit="displayResponse(event)">
       <label for="phone-number">📱 Your Full Phone Number:</label><br>
-      <input type="text" id="phone-number" name="phone-number" placeholder="Enter your phone number"><br><br>
+      <input type="text" id="phone-number" name="phone-number" placeholder="Enter your phone number" required><br><br>
       
       <label for="ip-address">🌐 Your IP Address:</label><br>
-      <input type="text" id="ip-address" name="ip-address" placeholder="Enter your IP address"><br><br>
+      <input type="text" id="ip-address" name="ip-address" placeholder="Enter your IP address" required><br><br>
       
-      <button type="button" onclick="alert('kys I ain't giving you shit')">Submit</button>
+      <button type="submit">Submit</button>
     </form>
+    <p class="response" id="response-message"></p>
   </div>
+  <script src="script.js"></script>
 </body>
 </html>
